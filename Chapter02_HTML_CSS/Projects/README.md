@@ -4,6 +4,7 @@
 
 ## პროექტები
 - სახელი გვარი (შაბლონი) | [პროექტის სახელი](/Chapter2_HTML/Projects/საჩვენებელი_მისამართი) | [View](/საჩვენებელი_მისამართი)
+- ნინო წიკლაური | [Book Shop](/Chapter2_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html) | [View](https://htmlpreview.github.io/?https://github.com/Tsiklaurii/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html)
 
 ## ინსტრუქცია
 მოამზადეთ პროექტის ინსტრქუციაში აღწერილი პირობის შესაბამისი ორი HTML პროექტი და დაამატეთ ზემოთ ნაჩვენებ სიაში მათი საჩვენებელი მისამართები. (იხ. დამატებით რესურსები)
