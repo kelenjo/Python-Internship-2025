@@ -3,7 +3,8 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა HTML პროექტები
 
 ## პროექტები
-- ლუკა შველიძე (შაბლონი) | [პროექტის სახელი](/Chapter2_HTML/Projects/საჩვენებელი_მისამართი) | [View](/საჩვენებელი_მისამართი)
+- ლუკა შველიძე (Homework_2) | [პროექტის სახელი](/Chapter2_HTML_CSS/Luka_Shvelidze) | [View](https://htmlpreview.github.io/?https://github.com/Lukino2772/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Luka%20Shvelidze/index.html
+  )
 
 ## ინსტრუქცია
 მოამზადეთ პროექტის ინსტრქუციაში აღწერილი პირობის შესაბამისი ორი HTML პროექტი და დაამატეთ ზემოთ ნაჩვენებ სიაში მათი საჩვენებელი მისამართები. (იხ. დამატებით რესურსები)
