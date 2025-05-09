@@ -38,3 +38,7 @@ input{
 label{
     color: white;
 }
+a{
+    display: block;
+    font-size: 1vw;
+}
