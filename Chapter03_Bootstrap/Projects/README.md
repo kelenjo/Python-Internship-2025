@@ -3,7 +3,7 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა პირველი Bootstrap პროექტები
 
 - [სახელი გვარი | პროექტი](/მისამართი)
-- [giorgi kelenjeridze | Food Order App] (https://htmlpreview.github.io/?https://github.com/kelenjo/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/GiorgiKelenjeridze/Project1/index.html)
+- [giorgi kelenjeridze | Food Order App] (/https://htmlpreview.github.io/?https://github.com/kelenjo/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/GiorgiKelenjeridze/Project1/index.html)
 
 ### 2025 ზაფხული
 
