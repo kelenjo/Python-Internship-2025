@@ -1,77 +1,61 @@
-body {
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 20px;
-}
+<style>
+  .chart-scale {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
+  .chart-scale label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 
-h1 {
-  text-align: center;
-}
+  .chart-scale input[type="radio"] {
+    display: none;
+  }
 
-.chart-scale {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin: 10px 0;
-}
+  .chart-scale span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+  }
 
-.chart-scale label {
-  cursor: pointer;
-}
+  /* Gradient color scale from red (1) to green (10) */
+  .rate-1 { background-color: #ff0000; }     /* Red */
+  .rate-2 { background-color: #ff3300; }
+  .rate-3 { background-color: #ff6600; }
+  .rate-4 { background-color: #ff9900; }
+  .rate-5 { background-color: #ffcc00; }
+  .rate-6 { background-color: #ccff00; }
+  .rate-7 { background-color: #99ff00; }
+  .rate-8 { background-color: #66ff00; }
+  .rate-9 { background-color: #33ff00; }
+  .rate-10 { background-color: #00ff00; }    /* Green */
 
-.chart-scale span {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid #999;
-  border-radius: 5px;
-  user-select: none;
-  transition: 0.2s;
-  margin: 3px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
+  /* Optional hover effect */
+  .chart-scale span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
 
-.chart-scale input[type="radio"]:checked + span {
-  outline: 2px solid black;
-  font-weight: bolder;
-}
+  .button-element {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
 
-label input {
-  display: none;
-}
-
-.rate-1  { background-color: #e60000; }
-.rate-2  { background-color: #ff3300; }
-.rate-3  { background-color: #ff6600; }
-.rate-4  { background-color: #ff9900; }
-.rate-5  { background-color: #ffcc00; }
-.rate-6  { background-color: #ccff33; }
-.rate-7  { background-color: #99cc33; }
-.rate-8  { background-color: #66cc33; }
-.rate-9  { background-color: #339933; }
-.rate-10 { background-color: #008000; }
-
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-.button-element {
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+  .button-element:hover {
+    background-color: #0b5ed7;
+  }
+</style>
