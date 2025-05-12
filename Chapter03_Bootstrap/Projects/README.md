@@ -3,6 +3,7 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა პირველი Bootstrap პროექტები
 
 - [სახელი გვარი | პროექტი](/მისამართი)
+- [giorgi kelenjeridze | Food Order App] (/https://htmlpreview.github.io/?https://github.com/kelenjo/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/GiorgiKelenjeridze/Project1/index.html)
 - ნინო წიკლაური | [Book Shop (with bootstrap)](/Chapter03_Bootstrap/Projects/Nino_Tsiklauri/Book_Shop/index.html) | [View](https://htmlpreview.github.io/?https://github.com/Tsiklaurii/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/Nino_Tsiklauri/Book_Shop/index.html)
 - სალომე პაპაშვილი | [GlobeTales (with Bootstrap)] (https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/Salome_Papashvili/GlobeTales/index.html) | [view](https://htmlpreview.github.io/?https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter03_Bootstrap/Projects/Salome_Papashvili/GlobeTales/index.html)
 
