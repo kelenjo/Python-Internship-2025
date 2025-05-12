@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 20vw;
+    display: inline-block;
+    margin: 4vh 1vw 0 1vw;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2vw;
+    padding: 0 1vw 0 1vw;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+    background-color: rgb(194, 226, 255);
+
+    h3{
+        font-size: 1.8vw;
+        margin: 0;
+    }
+    p{
+        font-size: 1.2vw;
+    }
+    h5{
+        font-size: 1.1vw;
+    }
+    ul{
+        list-style-position: inside;
+        padding: 0.2vw;
+        li{
+            font-size: 1.2vw;
+        }
+    }
+
+}
+.card:hover{
+    transform: rotate(-2deg);
+    background-color: rgba(195, 241, 142, 0.5);
+}
+
+img{
+    width: 17vw;
+}

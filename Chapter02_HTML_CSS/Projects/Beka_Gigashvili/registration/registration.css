@@ -1,0 +1,44 @@
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.registration-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    text-align: center;
+    padding: 2vw 4vw;
+    border-radius: 2vw;
+    background-color: rgb(112, 179, 242);
+
+    .submit-btn{
+        margin-top: 2vw;
+        height: 40px;
+        background-color: rgb(14, 148, 103);
+        border: none;
+        transition: transform 0.2s ease-in;
+        cursor: pointer;
+    }
+    .submit-btn:hover{
+        transform: scale(1.1);
+    }
+}
+input{
+    display: block;
+    margin: 0.3vw auto;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 0.5vw;
+    border: grey solid 0.2px;
+    color: white;
+}
+label{
+    color: white;
+}
+a{
+    display: block;
+    font-size: 1vw;
+}
