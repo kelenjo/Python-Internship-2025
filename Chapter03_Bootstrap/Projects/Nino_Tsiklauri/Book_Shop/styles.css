@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(212, 215, 255);
+}
+
+.container {
+    padding: 0px;
+    margin-top: 5px;
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 20px;
+}
+
+.card {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#accordionFlushExample {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: rgb(43, 0, 99);
+}
+
+.btn {
+    background-color: rgb(76, 0, 175);
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(98, 3, 223);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.pagination {
+    justify-content: center;
+    background-color: rgb(212, 215, 255);
+    margin-top: 20px;
+}
+
+.book_shop img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.registration {
+    margin-top: 70px;
+    width: 300px;
+}
+
+.registration input {
+    margin-bottom: 20px;
+}
+
+.registration-btn {
+    border: none;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+.registration-btn:hover{
+    background-color: rgb(24, 155, 24);
+}
