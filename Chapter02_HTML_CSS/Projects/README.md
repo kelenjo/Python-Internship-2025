@@ -3,7 +3,9 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა HTML პროექტები
 
 ## პროექტები
-- ლუკა შველიძე (Homework_2) | [პროექტის სახელი](/Chapter02_HTML_CSS/Luka_Shvelidze) | [View](https://htmlpreview.github.io/?https://github.com/Lukino2772/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Luka_Shvelidze/index.html)
+- ბექა გიგაშვილი | [Learning Website](/Chapter02_HTML_CSS/Projects/Beka_Gigashvili) | [View](https://htmlpreview.github.io/?https://github.com/BekaGigashvili/Python-Internship-2025/blob/adding-my-code/Chapter02_HTML_CSS/Projects/Beka_Gigashvili/course_cards/index.html)
+
+- ლუკა შველიძე (Homework_2) | [პროექტის /სახელი](/Chapter02_HTML_CSS/Luka_Shvelidze) | [View](https://htmlpreview.github.io/?https://github.com/Lukino2772/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Luka_Shvelidze/index.html)
 - სახელი გვარი (შაბლონი) | [პროექტის სახელი](/Chapter2_HTML/Projects/საჩვენებელი_მისამართი) | [View](/საჩვენებელი_მისამართი)
 - სალომე პაპაშვილი | [Cosmos Website] (https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/SalomePapashvili/home/index.html) | [View](https://htmlpreview.github.io/?https://raw.githubusercontent.com/KiwiScreams/Python-Internship-2025/main/Chapter02_HTML_CSS/Projects/SalomePapashvili/home/index.html)
 - ნინო წიკლაური | [Book Shop](/Chapter02_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html) | [View](https://htmlpreview.github.io/?https://github.com/Tsiklaurii/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html)
