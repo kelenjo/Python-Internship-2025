@@ -3,6 +3,7 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა პირველი შაბლონებთან სამუშაო პროექტები
 
 - სახელი გვარი | [პროექტი](/მისამართი)
+- giorgi kelenjeridze | [Food Order App](/Chapter04_Flask_Jinja/Projects/giorgikelenjeridze/app.py) | [View](/https://htmlpreview.github.io/?https://github.com/kelenjo/Python-Internship-2025/blob/main/Chapter4_Flask_Jinja/Projects/giorgikelenjeridze/templates/index.html)
 
 ### 2025 ზაფხული
 
