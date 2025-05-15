@@ -3,6 +3,7 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა პირველი შაბლონებთან სამუშაო პროექტები
 
 - სახელი გვარი | [პროექტი](/მისამართი)
+- Beka Gigashvili | [Company Website](https://github.com/BekaGigashvili/Python-Internship-2025/blob/main/Chapter04_Flask_Jinja/Projects/Beka%20Gigashvili/app.py)
 
 ### 2025 ზაფხული
 
