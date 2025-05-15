@@ -20,33 +20,17 @@
 <h4 class="align-items-center text-center mt-3 mb-5">Our Customers</h4>
 
 <div class="container">
+    {% for customer in customers %}
     <div class="row align-items-center mb-5">
         <div class="col m-0">
-            <img src="{{customers[0]['image']}}"
+            <img src="{{customer['image']}}"
                 alt="customer" class="m-0">
         </div>
         <div class="col m-0">
-            {{customers[0]['comment']}}
+            {{customer['comment']}}
         </div>
     </div>
-    <div class="row align-items-center mb-5">
-        <div class="col m-0">
-            <img src="{{customers[1]['image']}}"
-                alt="customer" class="m-0">
-        </div>
-        <div class="col m-0">
-            {{customers[1]['comment']}}
-        </div>
-    </div>
-    <div class="row align-items-center mb-5">
-        <div class="col m-0">
-            <img src="{{customers[2]['image']}}"
-                alt="customer" class="m-0">
-        </div>
-        <div class="col m-0">
-            {{customers[2]['comment']}}
-        </div>
-    </div>
+    {% endfor %}
 </div>
 
 {% endblock %}
