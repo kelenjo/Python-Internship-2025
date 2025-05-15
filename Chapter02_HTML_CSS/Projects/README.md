@@ -3,7 +3,8 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა HTML პროექტები
 
 ## პროექტები
-- სახელი გვარი (შაბლონი) | [პროექტის სახელი](/Chapter2_HTML/Projects/საჩვენებელი_მისამართი) | [View](/საჩვენებელი_მისამართი)
+- ირაკლი აბაშიძე  [პროექტის სახელი](https://github.com/blitz-flex/Python-Internship-2025/tree/main/Chapter02_HTML_CSS/Projects/Irakl%20Abashidze)   | [View](https://htmlpreview.github.io/?https://github.com/blitz-flex/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Irakl%20Abashidze/Fitness%20Club/index.html)
+ 
 
 ## ინსტრუქცია
 მოამზადეთ პროექტის ინსტრქუციაში აღწერილი პირობის შესაბამისი ორი HTML პროექტი და დაამატეთ ზემოთ ნაჩვენებ სიაში მათი საჩვენებელი მისამართები. (იხ. დამატებით რესურსები)
