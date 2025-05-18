@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია - Fitness Club</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-page">
+        <header class="form-header">
+            <a href="../Fitness Club/index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                მთავარი გვერდი
+            </a>
+            <h1>დაიწყე შენი მოგზაურობა ფიტნესში</h1>
+            <p class="subtitle">შეავსე ფორმა და ჩვენი გუნდი დაგიკავშირდება</p>
+        </header>
+
+        <main class="form-container">
+            <form class="register-form">
+                <div class="form-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" placeholder="სახელი და გვარი" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-dumbbell"></i>
+                        <select id="program" required>
+                            <option value="" disabled selected>აირჩიეთ პროგრამა</option>
+                            <option value="yoga">იოგა (₾80/თვე)</option>
+                            <option value="crossfit">კროსფიტი (₾100/თვე)</option>
+                            <option value="gym">ძალოსნობა (₾120/თვე)</option>
+                            <option value="boxing">კრივი (₾90/თვე)</option>
+                            <option value="pilates">პილატესი (₾85/თვე)</option>
+                            <option value="swimming">ცურვა (₾150/თვე)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="ტელეფონის ნომერი" pattern="[5][0-9]{8}" title="გთხოვთ შეიყვანოთ ქართული მობილურის ნომერი (9 ციფრი, იწყება 5-ით)" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <span>დაიწყე ვარჯიში</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Fitness Club. ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html>
