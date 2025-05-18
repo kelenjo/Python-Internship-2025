@@ -12,7 +12,9 @@
 - სახელი გვარი (შაბლონი) | [პროექტის სახელი](/Chapter2_HTML/Projects/საჩვენებელი_მისამართი) | [View](/საჩვენებელი_მისამართი)
 - სალომე პაპაშვილი | [Cosmos Website] (https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/SalomePapashvili/home/index.html) | [View](https://htmlpreview.github.io/?https://raw.githubusercontent.com/KiwiScreams/Python-Internship-2025/main/Chapter02_HTML_CSS/Projects/SalomePapashvili/home/index.html)
 - ნინო წიკლაური | [Book Shop](/Chapter02_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html) | [View](https://htmlpreview.github.io/?https://github.com/Tsiklaurii/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Nino%20Tsiklauri/Book_Shop/index.html)
+- დავით ეგოიანი | [Portfolio](/Chapter02_HTML_CSS/Projects/Davit%20Egoian/portfolio/portfolio.html) | [View](https://htmlpreview.github.io/?https://github.com/DavitEgoian/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Davit%20Egoian/portfolio/portfolio.html) | [Feetback Form](/Chapter02_HTML_CSS/Projects/Davit%20Egoian/feetback_form/home.html) | [https://htmlpreview.github.io/?https://github.com/DavitEgoian/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/Davit%20Egoian/feetback_form/home.html]
 - გიორგი კელენჯერიძე [Food Order](/Chapter02_HTML_CSS/Projects/GiorgiKelenjeridze) | [View](https://htmlpreview.github.io/?https://github.com/kelenjo/Python-Internship-2025/blob/main/Chapter02_HTML_CSS/Projects/GiorgiKelenjeridze/Project1/index.html)
+
 ## ინსტრუქცია
 მოამზადეთ პროექტის ინსტრქუციაში აღწერილი პირობის შესაბამისი ორი HTML პროექტი და დაამატეთ ზემოთ ნაჩვენებ სიაში მათი საჩვენებელი მისამართები. (იხ. დამატებით რესურსები)
 
