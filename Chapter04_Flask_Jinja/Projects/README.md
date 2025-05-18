@@ -3,8 +3,9 @@
 დირექტორიაში განთავსებულია კონტრიბუტორთა პირველი შაბლონებთან სამუშაო პროექტები
 
 - სახელი გვარი | [პროექტი](/მისამართი)
+- სალომე პაპაშვილი | [GlobeTales](https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter04_Flask_Jinja/Projects/Salome_Papashvili/app.py)
 - ნინო წიკლაური | [Book Shop (with Flask)](/Chapter04_Flask_Jinja/Projects/Nino_Tsiklauri/app.py)
-
+- 
 ### 2025 ზაფხული
 
 ## ინსტრუქცია:
