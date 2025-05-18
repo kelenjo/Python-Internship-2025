@@ -1,0 +1,142 @@
+/* Form Page Styles */
+.form-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 20px;
+}
+
+.form-header {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 20px;
+}
+
+.form-header h1 {
+    font-size: 2em;
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.form-header .subtitle {
+    color: #636e72;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.register-form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    color: #b2bec3;
+    font-size: 1.1em;
+}
+
+.input-with-icon input,
+.input-with-icon select {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 2px solid #dfe6e9;
+    border-radius: 12px;
+    font-size: 1em;
+    transition: .3s;
+    background: white;
+}
+
+.input-with-icon input:focus,
+.input-with-icon select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    outline: none;
+}
+
+.input-with-icon input::placeholder {
+    color: #b2bec3;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+}
+
+.submit-button:hover i {
+    transform: translateX(5px);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2d3436;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #4CAF50;
+    transform: translateX(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 50px;
+}
+
+
+/* Responsive & Footer */
+@media (max-width: 768px) {
+    .workout-cards {
+        grid-template-columns: 1fr;
+    }
+    .register-form {
+        padding: 20px;
+    }
+    .input-with-icon input,
+    .input-with-icon select {
+        padding: 12px 12px 12px 40px;
+    }
+}
