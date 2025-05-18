@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    html,
+    body {
+        height: 100%;
+        padding-top: 40px;
+    }
+
+    .col img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h4 class="align-items-center text-center mt-3 mb-5">Our Customers</h4>
+
+<div class="container">
+    {% for customer in customers %}
+    <div class="row align-items-center mb-5">
+        <div class="col m-0">
+            <img src="{{customer['image']}}"
+                alt="customer" class="m-0">
+        </div>
+        <div class="col m-0">
+            {{customer['comment']}}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
