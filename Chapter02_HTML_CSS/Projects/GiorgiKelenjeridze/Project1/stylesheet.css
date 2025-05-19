@@ -1,0 +1,61 @@
+<style>
+  .chart-scale {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .chart-scale label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .chart-scale input[type="radio"] {
+    display: none;
+  }
+
+  .chart-scale span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Gradient color scale from red (1) to green (10) */
+  .rate-1 { background-color: #ff0000; }     /* Red */
+  .rate-2 { background-color: #ff3300; }
+  .rate-3 { background-color: #ff6600; }
+  .rate-4 { background-color: #ff9900; }
+  .rate-5 { background-color: #ffcc00; }
+  .rate-6 { background-color: #ccff00; }
+  .rate-7 { background-color: #99ff00; }
+  .rate-8 { background-color: #66ff00; }
+  .rate-9 { background-color: #33ff00; }
+  .rate-10 { background-color: #00ff00; }    /* Green */
+
+  /* Optional hover effect */
+  .chart-scale span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+
+  .button-element {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .button-element:hover {
+    background-color: #0b5ed7;
+  }
+</style>
