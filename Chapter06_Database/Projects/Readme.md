@@ -1,0 +1,1 @@
+- სალომე პაპაშვილი | [GlobeTales](/Chapter06_Database/Projects/Salome_Papashvili/app.py)
