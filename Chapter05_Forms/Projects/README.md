@@ -4,6 +4,7 @@
 
 - სახელი გვარი | [პროექტი](/მისამართი)
 - ნინო წიკლაური | [Registration Form](/Chapter05_Forms/Projects/Nino_Tsiklauri/app.py)
+- დავით ეგოიანი | [Submission Form](/Chapter05_Forms/Projects/Davit%20Egoian/app.py)
 
 ### 2025 ზაფხული
 
