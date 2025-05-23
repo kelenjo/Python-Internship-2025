@@ -11,9 +11,11 @@ UPLOAD_PATH = path.join(app.root_path, "static", "assets")
 
 db = SQLAlchemy(app)
 
-users = []
 
-#### MODELS ####
+################################
+####        MODELS          ####
+################################
+
 class Product(db.Model):
     __tablename__ = "producs"
     id = db.Column(db.Integer, primary_key=True)
@@ -21,6 +23,75 @@ class Product(db.Model):
     author = db.Column(db.String)
     price = db.Column(db.Float)
     image = db.Column(db.String)
+
+
+### ONE TO ONE RELATIONSHIP ###
+class Person(db.Model):
+    __tablename__ = "people"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    surname = db.Column(db.String)
+    birthday = db.Column(db.Date)
+    idcard_id = db.Column(db.Integer, db.ForeignKey("id_cards.id"))
+
+    id_card = db.relationship("IDCard", back_populates="person")
+
+class IDCard(db.Model):
+    __tablename__ = "id_cards"
+    id = db.Column(db.Integer, primary_key=True)
+    personal_number = db.Column(db.String)
+    serial_number = db.Column(db.String)
+    expiry_date = db.Column(db.Date)
+
+    person = db.relationship("Person", back_populates="id_card", uselist=False)
+
+
+### ONE TO MANY RELATIONSHIP ###
+class University(db.Model):
+    __tablename__ = "universities"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    address = db.Column(db.String)
+
+    students = db.relationship("Student", back_populates="university")
+
+class Student(db.Model):
+    __tablename__ = "students"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    university_id = db.Column(db.Integer, db.ForeignKey("universities.id"))
+
+    university = db.relationship("University", back_populates="students")
+
+
+### MANY TO MANY RELATIONSHIP ###
+class Actor(db.Model):
+    __tablename__ = "actors"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+
+    movies = db.relationship("Movie", back_populates="actors", secondary="actor_movie")
+
+class ActorMovie(db.Model):
+    __tablename__ = "actor_movie"
+    id = db.Column(db.Integer, primary_key=True)
+    actor_id = db.Column(db.Integer, db.ForeignKey("actors.id"))
+    movie_id = db.Column(db.Integer, db.ForeignKey("movies.id"))
+
+class Movie(db.Model):
+    __tablename__ = "movies"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    genre = db.Column(db.String)
+
+    actors = db.relationship("Actor", back_populates="movies", secondary="actor_movie")
+
+
+################################
+####        ROUTES          ####
+################################
+
+users = []
 
 
 @app.route("/")
@@ -64,7 +135,7 @@ def add_product():
         filename = f"{uuid4()}{extension}"
         file.save(path.join(UPLOAD_PATH, filename))
 
-        new_product = Product(name=form.name.data, author=form.author.data,  price=form.price.data, image=filename)
+        new_product = Product(name=form.name.data, author=form.author.data, price=form.price.data, image=filename)
         db.session.add(new_product)
         db.session.commit()
 
@@ -109,6 +180,7 @@ def delete_product(id):
 def view_product(product_id):
     chosen_product = Product.query.get(product_id)
     return render_template("view_product.html", product=chosen_product)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
