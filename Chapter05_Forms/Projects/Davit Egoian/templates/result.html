@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Submission Confirmation</h2>
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Name:</strong> {{ entry.name }}</li>
+    <li class="list-group-item"><strong>Email:</strong> {{ entry.email }}</li>
+    <li class="list-group-item"><strong>Message:</strong> {{ entry.message }}</li>
+    <li class="list-group-item"><strong>Timestamp:</strong> {{ entry.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</li>
+  </ul>
+  <a href="{{ url_for('submit') }}" class="btn btn-secondary mt-3">Submit Another</a>
+{% endblock %}
