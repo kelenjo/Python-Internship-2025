@@ -12,10 +12,10 @@ products = [
 with app.app_context():
     db.create_all()
 
-    # for product in products:
-    #     new_product = Product(name=product["name"], author=product["author"], price=product["price"], image=product["img"])
-    #     db.session.add(new_product)
-    # db.session.commit()
+    for product in products:
+        new_product = Product(name=product["name"], author=product["author"], price=product["price"], image=product["img"])
+        db.session.add(new_product)
+    db.session.commit()
 
 
     ### ONE TO ONE EXAMPLE DATA ###
