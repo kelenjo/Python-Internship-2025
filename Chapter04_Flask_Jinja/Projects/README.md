@@ -4,6 +4,9 @@
 
 - სახელი გვარი | [პროექტი](/მისამართი)
 
+- ირაკლი აბაშიძე | [ Fitness Club (with Flask)](https://github.com/blitz-flex/Python-Internship-2025/blob/225eeeef95bc39657f2ff50a0c0aebfb30aad386/Chapter04_Flask_Jinja/Projects/Irakli%20Abashidze/app.py)
+
+
 ### 2025 ზაფხული
 
 ## ინსტრუქცია:
