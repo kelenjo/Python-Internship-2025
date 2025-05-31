@@ -1,4 +1,6 @@
-from app import app, db, Product
+import datetime
+
+from app import app, db, Product, IDcard, Person
 
 products = [
     {
@@ -47,9 +49,16 @@ products = [
 
 
 with app.app_context():
+
     db.create_all()
 
     for product in products:
         new_product = Product(name=product["name"], price=product["price"], image=product["image"])
         db.session.add(new_product)
+
+    idcard = IDcard(serial_number="01201115242", expiry_data=datetime.datetime.now())
+    db.session.add(idcard)
+    db.session.commit()
+    person = Person(name="Giorgi", surname="Kelenjeridze", birthday=datetime.datetime.now(), idcard_id=idcard.id)
+    db.session.add(person)
     db.session.commit()

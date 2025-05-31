@@ -4,6 +4,7 @@
 
 - სახელი გვარი | [პროექტი](/მისამართი)
 - ნინო წიკლაური | [Registration Form](/Chapter05_Forms/Projects/Nino_Tsiklauri/app.py)
+- giorgi kelenjeridze | [Food Order App](/Chapter05_Forms/Projects/giorgikelenjeridze/app.py)
 
 ### 2025 ზაფხული
 
