@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Trips{%endblock %}
+{% block content %}
+<header class="hero d-flex align-items-center justify-content-center text-center custom-hero">
+    <div style="max-width: 600px;">
+        <h1 class="display-3 fw-bold">Explore world🌎</h1>
+    </div>
+</header>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">🌎 Featured Trips</h2>
+    <div class="row g-4">
+        {% for tour in tours %}
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="{{tour.image}}" class="card-img-top" alt="{{tour.title}}">
+                <div class="card-body">
+                    <h3 class="card-title">{{tour.title}}</h3>
+                    <h5 class="card-text">{{tour.price}}$</h5>
+                    <p class="card-text" style="text-decoration: line-through;">{{tour.old_price}}$</p>
+                    <a href="/trips/{{tour['id']}}" class="btn btn-custom">Explore {{tour.country}}</a>
+                    <a href="/add_tour" class="btn btn-warning">Create</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">✈️ Plan Your Next Trip</h2>
+    <p class="text-center">Whether you're seeking a relaxing beach vacation or an adventurous mountain hike, GlobeTales has the perfect destination for you. Start planning your trip today!</p>
+    <div class="d-flex justify-content-center">
+        <a href="about.html" class="btn btn-lg btn-outline-dark">Get Started</a>
+    </div>
+</div>
+{% endblock %}

@@ -4,4 +4,6 @@
 - სახელი გვარი | [პროექტი](/მისამართი)
 
 ### 2025 ზაფხული
-
+- giorgi kelenjeridze | [Food Order App](/Chapter07_Factory_Pattern/Projects/giorgikelenjeridze/app.py)
+- ნინო წიკლაური | [Book Shop](/Chapter07_Factory_Pattern/Projects/Nino_Tsiklauri/app.py)
+- სალომე პაპაშვილი | [GlobeTales](/Chapter07_Factory_Pattern/Projects/Salome_Papashvili/app.py)
