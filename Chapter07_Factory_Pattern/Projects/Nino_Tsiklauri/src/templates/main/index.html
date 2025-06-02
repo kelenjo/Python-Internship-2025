@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "partials/base.html" %}
 
 {% block title %}
 Main Page
@@ -40,25 +40,33 @@ Main Page
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
     </div>
+    <a href="/add_product" class="btn btn-primary" style="margin-bottom: 20px;">Add New Product</a>
 
 
     <!-- Card -->
+    {% for product in products %}
+    {% if loop.index0 % 4 == 0 %}
+    {% if not loop.first %}
+        </div>
+    {% endif %}
     <div class="row">
-        {% for product in products %}
-        <div class="col">
-            <div class="card shadow">
-                <img src="/static/assets/{{ product['img'] }}"
-                     class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">{{ product["name"] }}</h5>
-                    <p class="card-text">{{ product["author"] }}</p>
-                    <p class="price">{{ product["price"] }}₾</p>
-                    <a href="/view/{{ product['id'] }}" class="btn btn-primary">ნახვა</a>
+        {% endif %}
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="/static/assets/{{ product.image }}" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.author }}</p>
+                        <p class="price">{{ product.price }}₾</p>
+                        <a href="/view/{{ product.id }}" class="btn btn-primary ">View</a>
+                        <a href="/edit_product/{{ product.id }}" class="btn btn-primary ">Edit</a>
+                        <a href="/delete_product/{{ product.id }}" class="btn btn-danger ">Delete</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        {% endfor %}
+    {% endfor %}
     </div>
+
 
 
     <!-- Pagination -->
