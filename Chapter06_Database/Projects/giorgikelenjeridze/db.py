@@ -1,45 +1,45 @@
-from flask import Flask, render_template
+import datetime
 
-app = Flask(__name__)
+from app import app, db, Product, IDcard, Person
 
 products = [
     {
-        "id": 1,
-        "name": "პატარა",
+        "id": 0,
+        "name": "შაურმა პატარა",
         "price": 11,
         "image": "shaurma.jfif",
         "description": "ლავაში, ღორის ხორცი 200გ, პომიდორი, ხახვი, სალათის ფურცელი(აისბერგი), წიწაკა, მაიონეზი, კეტჩუპი"
     },
     {
-        "id": 2,
-        "name": "სტანდარტი",
+        "id": 1,
+        "name": "შაურმა სტანდარტი",
         "price": 13,
         "image": "shaurma.jfif",
         "description": "ლავაში, ღორის ხორცი 250გ, პომიდორი, ხახვი, სალათის ფურცელი(აისბერგი), წიწაკა, მაიონეზი, კეტჩუპი"
     },
     {
-        "id": 3,
-        "name": "დიდი",
+        "id": 2,
+        "name": "შაურმა დიდი",
         "price": 18,
         "image": "shaurma.jfif",
         "description": "ლავაში, ღორის ხორცი 300გ, პომიდორი, ხახვი, სალათის ფურცელი(აისბერგი), წიწაკა, მაიონეზი, კეტჩუპი"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "კოლა",
         "price": 3,
         "image": "cola.jfif",
         "description": "ცივი გაზიანი სასმელი, კოკა-კოლა 500მლ"
     },
     {
-        "id": 5,
+        "id": 4,
         "name": "სპრაიტი",
         "price": 3,
         "image": "sprite.jfif",
         "description": "ცივი გაზიანი სასმელი, სპრაიტი 500მლ"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "ბურგერი",
         "price": 10,
         "image": "burger.png",
@@ -47,25 +47,18 @@ products = [
     }
 ]
 
-@app.route("/")
-def index():
-    return render_template("index.html", products=products)
 
+with app.app_context():
 
-@app.route("/feedback")
-def feedback():
-    return render_template("feedback.html")
+    db.create_all()
 
+    for product in products:
+        new_product = Product(name=product["name"], price=product["price"], image=product["image"])
+        db.session.add(new_product)
 
-@app.route("/register")
-def register():
-    return render_template("register.html")
-
-
-@app.route("/view/<product_id>")
-def view(product_id):
-    print(product_id)
-    return f"<h1>{products[int(product_id)]}</h1>"
-
-
-app.run(debug=True)
+    idcard = IDcard(serial_number="01201115242", expiry_data=datetime.datetime.now())
+    db.session.add(idcard)
+    db.session.commit()
+    person = Person(name="Giorgi", surname="Kelenjeridze", birthday=datetime.datetime.now(), idcard_id=idcard.id)
+    db.session.add(person)
+    db.session.commit()

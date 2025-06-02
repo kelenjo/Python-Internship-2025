@@ -1,6 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
+from forms import RegisterForm
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "esrdhsetwfgawef"
 
 products = [
     {
@@ -47,6 +49,7 @@ products = [
     }
 ]
 
+
 @app.route("/")
 def index():
     return render_template("index.html", products=products)
@@ -57,15 +60,25 @@ def feedback():
     return render_template("feedback.html")
 
 
-@app.route("/register")
+@app.route("/register", methods=['GET', 'POST'])
 def register():
-    return render_template("register.html")
+    form = RegisterForm()
+    if form.validate_on_submit():
+        print(form.username.data)
+        print(form.email.data)
+        print(form.password.data)
+        flash("Sagol shen daregistrirdi", "info")
+        # return render_template('index.html')
+    else:
+        print(form.errors)
+    return render_template("register.html", form=form)
 
 
-@app.route("/view/<product_id>")
+@app.route("/view/<int:product_id>")
 def view(product_id):
-    print(product_id)
-    return f"<h1>{products[int(product_id)]}</h1>"
+    product = products[product_id]
+    print(product)
+    return render_template("view_product.html", product=product)
 
 
 app.run(debug=True)
