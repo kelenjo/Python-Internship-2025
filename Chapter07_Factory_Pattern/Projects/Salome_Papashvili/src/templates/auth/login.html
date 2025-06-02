@@ -1,0 +1,25 @@
+{% extends "partials/base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+
+<div class="container d-flex justify-content-center">
+    <div class="card rounded-4 w-100 my-5" style="max-width: 500px;">
+        <div class="card-body p-4">
+            <h2 class="card-title text-center mb-4">Log In</h2>
+            <div class="mb-3 text-danger">
+            </div>
+
+            <form method="post">
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                </div>
+
+                <div class="mb-4">
+                    <input type="password" name="password" class="form-control" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="btn btn-custom w-100 py-2">Log In</button>
+            </form>
+        </div>
+    </div>
+</div>{% endblock %}

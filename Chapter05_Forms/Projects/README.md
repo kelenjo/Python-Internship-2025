@@ -4,6 +4,7 @@
 
 - სახელი გვარი | [პროექტი](/მისამართი)
 - ნინო წიკლაური | [Registration Form](/Chapter05_Forms/Projects/Nino_Tsiklauri/app.py)
+- სალომე პაპაშვილი | [Forms] (https://github.com/KiwiScreams/Python-Internship-2025/blob/main/Chapter05_Forms/Projects/Salome_Papashvili/app.py)
 
 ### 2025 ზაფხული
 
