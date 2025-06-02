@@ -5,7 +5,7 @@ from uuid import uuid4
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "JBKCVKCKCJjvn46r76yuv8g98g7f@"
-UPLOAD_PATH = path.join(app.root_path, "static")
+UPLOAD_PATH = path.join(app.root_path, "static", "upload")
 
 products = [
     {"id": 0, "name": "ფრანით მორბენალი", "author": "ხალიდ ჰოსეინი", "price": "25", "img": "franit-morbenali.png"},
