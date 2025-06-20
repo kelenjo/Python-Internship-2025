@@ -12,6 +12,6 @@ class Config:
     # print(DB_DATABASE)
     BASE_DIRECTORY = path.abspath(path.dirname(__file__))
     UPLOAD_PATH = path.join(BASE_DIRECTORY, "static", "assets")
-    SQLALCHEMY_DATABASE_URI = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@localhost:5432/{DB_DATABASE}"
+    SQLALCHEMY_DATABASE_URI = f"postgresql://{DB_USER}:{DB_PASSWORD}@localhost:5432/{DB_DATABASE}"
     SECRET_KEY = environ.get("SECRET_KEY")
     FLASK_ADMIN_SWATCH="Flatly"
